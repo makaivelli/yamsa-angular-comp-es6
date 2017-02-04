@@ -1,0 +1,34 @@
+<div class="movie-item">
+
+    <div class="card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+
+                <!-- item image -->
+                <img ng-src="{{movieItemCtrl.movie.Poster}}" alt="Image">
+                <!-- item image -->
+
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="media">
+                <div class="media-content">
+
+                    <!-- item title -->
+                    <p class="title is-4">{{movieItemCtrl.movie.Title}}</p>
+                    <!-- item title -->
+
+                </div>
+            </div>
+
+            <div class="content">
+
+                <!-- item description -->
+                {{movieItemCtrl.movie.Description}}
+                <!-- item description -->
+
+            </div>
+        </div>
+    </div>
+
+</div>

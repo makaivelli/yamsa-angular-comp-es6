@@ -1,0 +1,31 @@
+<div class="search-movies">
+    <nav class="nav has-shadow">
+        <div class="container">
+            <div class="column">
+                <p class="control">
+
+                    <!-- search component -->
+                    <search on-update="searchMoviesCtrl.onQuery($event)"></search>
+                    <!-- search component -->
+
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- error -->
+    <div class="notification has-text-centered is-warning" ng-show="searchMoviesCtrl.showError">
+        Error {{searchMoviesCtrl.errorMessage}}
+    </div>
+    <!-- error -->
+
+    <!-- loading -->
+    <div class="notification has-text-centered" ng-show="searchMoviesCtrl.onProgress">
+      Loading
+    </div>
+    <!-- loading -->
+
+    <!-- movies component -->
+    <movies movies-data="searchMoviesCtrl.data"></movies>
+    <!-- movies component -->
+</div>
