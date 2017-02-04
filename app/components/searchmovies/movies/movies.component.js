@@ -1,5 +1,4 @@
 import template from './movies.html';
-import controller from './movies.controller';
 import './movies.sass';
 
 const moviesComponent = {
@@ -7,7 +6,6 @@ const moviesComponent = {
         moviesData: '<'
     },
     template,
-    controller,
     controllerAs: 'moviesCtrl'
 };
 
