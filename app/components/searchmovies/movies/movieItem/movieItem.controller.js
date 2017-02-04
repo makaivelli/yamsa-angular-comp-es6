@@ -1,4 +1,4 @@
-class MoviesController {
+class MovieItemController {
     constructor(OmdbService) {
         'ngInject';
         this.OmdbService = OmdbService;
@@ -13,4 +13,4 @@ class MoviesController {
 
 }
 
-export default MoviesController;
+export default MovieItemController;
